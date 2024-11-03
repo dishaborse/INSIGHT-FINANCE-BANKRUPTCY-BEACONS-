@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #0F1E32;
+    overflow-x: hidden;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Navbar */
+header {
+    background-color: #0F1E32;
+    padding: 20px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+@media (max-width:768px) {
+    .logo-image {
+        width: 80px;
+    }
+    .logo span {
+        font-size: 0.7em;
+    }
+}
+.beacon-text {
+    font-family: 'Lancelot', cursive; 
+}
+
+    
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 0 20px 10px 20px;
+    border-bottom: 2px solid #0DBFFF;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-image {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s;
+}
+.logo-image:hover {
+    transform: rotate(360deg); 
+}
+  
+
+.logo-text {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.logo-text span {
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.navbar a:hover {
+    color: #0DBFFF; 
+}
+
+
+.sign-in {
+    padding: 8px 16px;
+    background-color: #0DBFFF;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sign-in:hover {
+    background-color: #FFFFFF;
+    color:#0DBFFF;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 15px 8px 15px;  
+        border-bottom-width: 2px;   
+    }
+
+    .navbar ul {
+        gap: 15px; 
+    }
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url('rb_80501-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: ceter;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;    
+}
+
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.hero h1 span {
+    color: #0DBFFF;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.get-started-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    color: #0F1E32;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Lato',sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.get-started-button:hover {
+    background-color: #0DBFFF;
+    color: #0a2e4d;
+}
+
+.screenshot-image {
+    display: block;
+    margin: 20px auto; 
+    max-width: 60%; 
+    height: auto; 
+    border-radius: 20px;
+}
+
+
+
+main {
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+  }
+  main h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .form-container {
+    background-color: #0a2e4d;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  .form-row label {
+    color: #b0c4de;
+  }
+  .form-row input {
+    background-color: #143b5b;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    width: 45%;
+    border-radius: 5px;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #b0c4de;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #00bfff; 
+  }
+  
+  .primary-btn, .secondary-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:#00bfff;
+    color: #0a2e4d;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .primary-btn:hover,.secondary-btn:hover {
+    background-color: #143b5b; 
+    color: #b0c4de;
+    transform: scale(1.05);
+  }
+  
+  .secondary-btn:hover {
+    background-color: #143b5b;
+    color: #b0c4de;
+    margin-left: 10px;
+  }
